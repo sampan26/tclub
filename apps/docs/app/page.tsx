@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
-import { Button } from "@repo/ui/button";
 
 function Gradient({
   conic,
@@ -78,10 +77,6 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <Button appName="docs" className={styles.button}>
-        Click me!
-      </Button>
-
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.logos}>
@@ -91,7 +86,6 @@ export default function Page(): JSX.Element {
                 height={614}
                 src="circles.svg"
                 width={614}
-                style={{ pointerEvents: "none" }}
               />
             </div>
             <div className={styles.logoGradientContainer}>
@@ -105,7 +99,6 @@ export default function Page(): JSX.Element {
                 priority
                 src="turborepo.svg"
                 width={120}
-                style={{ pointerEvents: "none" }}
               />
             </div>
           </div>
