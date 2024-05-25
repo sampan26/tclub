@@ -1,10 +1,6 @@
 {
   "name": "with-yarn",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -16,8 +12,12 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "npm@8.19.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
